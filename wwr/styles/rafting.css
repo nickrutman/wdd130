@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+
+.box {
+    margin: 0em;
+    border: 2px #000;
+    padding: 1em;
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+}
 :root {
     --primary-color: #9ACD32; /* Yellow Green */
     --secondary-color: #C0C0C0; /* Silver */
@@ -12,17 +20,58 @@
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
+.grid {
+    display: grid;
+    grid-template-columns: 120px, 1fr, 1fr, 1fr, 1fr;
+    align-items: center;
 
+}
 header {
+    display: flex;
     background-color: var(--primary-color);
     color: var(--accent2-color);
+    justify-content: space-evenly;
 }
+
+header img {
+    grid-column: 1/2;
+    margin: 1em;
+}
+nav {
+    padding 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+
+}
+ul {
+    display: flex;
+    list-style: none;
+    grid-column: 2/3;
+}
+header img {
+    display: grid;
+    grid-column: 1/2;
+}
+
+nav a{
+    display: grid;
+    padding: 0em;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: var(--accent1-color);
+    grid-column: 3/5;
+}
+
+
 
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
 }
-header, main, footer {
+header, main, .grid, footer {
     width: 840px;
     margin: 0 auto;
 }
