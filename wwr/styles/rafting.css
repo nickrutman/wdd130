@@ -22,56 +22,43 @@
 }
 .grid {
     display: grid;
-    grid-template-columns: 120px, 1fr, 1fr, 1fr, 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     align-items: center;
 
 }
 header {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: var(--primary-color);
     color: var(--accent2-color);
-    justify-content: space-evenly;
+    padding: 1em;
 }
 
 header img {
-    grid-column: 1/2;
-    margin: 1em;
+    width: 150px;
+    height: auto;
 }
-nav {
-    padding 1em;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    
 
-}
-ul {
+nav ul {
     display: flex;
     list-style: none;
-    grid-column: 2/3;
-}
-header img {
-    display: grid;
-    grid-column: 1/2;
+
 }
 
-nav a{
-    display: grid;
-    padding: 0em;
+nav a {
     text-decoration: none;
     font-size: 1.2em;
     font-weight: 700;
     color: var(--accent1-color);
-    grid-column: 3/5;
 }
-
-
 
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
 }
-header, main, .grid, footer {
+header, main, .grid, footer, .history, .adventures {
     width: 840px;
     margin: 0 auto;
 }
@@ -91,15 +78,15 @@ nav, p, section, article {
     text-decoration: none;
 }
 
-
+.hero {
+    position: relative;
 
 .hero img {
     display: block;
-    width: 100%;
+    width: 840px;
     height: auto;
 }
-.hero {
-    position: relative;
+
 }
 
 h1 {
@@ -111,13 +98,10 @@ h1 {
     opacity: 0.7;
     background-color: var(--accent1-color);
     color: #fff;
+    
 }
 
-h2 {
-    background-color: var(--accent1-color);
-    color: #fff;
-    text-align: center;
-}
+
 
 article {
     position: absolute;
@@ -131,4 +115,67 @@ article {
 .hero article img {
     float: right;
     width: 125px;
+}
+
+
+.history {
+  display: grid;
+  grid-template-columns: 1fr 200px 1fr;
+  gap: 1em;
+  align-items: center;
+  padding: 2em;
+  background: #f5f5f5;
+}
+
+.history h2 {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin-bottom: 1em;
+  font-family: var(--heading-font);
+  background-color: var(--accent1-color);
+  color: #FFF;
+}
+
+
+.adventures {
+  text-align: center;
+  padding: 2em;
+}
+
+.adventures h2 {
+  margin-bottom: 1em;
+  font-family: var(--heading-font);
+  background-color: var(--accent1-color);
+  color: #FFF;
+}
+
+.adventures .gallery {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.adventures figure {
+  text-align: center;
+  margin: 1em;
+}
+
+.adventures img {
+  width: 100%;
+  height: auto;
+  max-width: 150px;
+  margin: 0 auto;
+  display: block;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+} 
+
+footer a {
+    
+    margin: 1em;
+    width: 30px;
+    height: auto;
+
 }
