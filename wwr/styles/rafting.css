@@ -183,12 +183,12 @@ h1 {
 
 .mapform {
 display: grid;
-grid-template-columns: 1fr, 1fr;
+grid-template-columns: 1fr 1fr;
 }
 
 .map {
     grid-column: 1;
-    gap: 1;
+    gap: 1rem;
 }
 
 .form  {
@@ -209,8 +209,8 @@ grid-template-columns: 1fr, 1fr;
 }
 .purpose {
     display: grid;
-    grid-template-columns: 1fr, 1fr;
-    grid-template-rows: 1fr, 1fr, 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
 }
 
 button {
@@ -220,7 +220,7 @@ button {
     display: block;
     padding: .5rem;
     border-radius: .5rem;
-    box-shadow: 0, 0, 30px #eee;
+    box-shadow: 0 0 30px #eee;
 }
 
 .employees {
