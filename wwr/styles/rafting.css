@@ -63,7 +63,7 @@ header, main, .grid, footer, .history, .adventures {
     margin: 0 auto;
 }
 
-h1, h2 {
+h1, h2, {
     font-family: var(--heading-font);
     color: var(--primary-color);
     display: block;
@@ -163,6 +163,76 @@ article {
   margin: 0 auto;
   display: block;
 }
+
+.offering {
+  text-align: center;
+  padding: 2em;
+  background-color: var(--secondary-color);
+}
+
+.offering h2 {
+  margin-bottom: 1em;
+  font-family: var(--heading-font);
+  background-color: var(--accent1-color);
+  color: #FFF;
+}
+
+.offering .gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.offering figure {
+  text-align: center;
+  margin: 1em;
+}
+
+.offering img {
+  width: 100%;
+  height: auto;
+  max-width: 150px;
+  padding: .1rem;
+  margin: 0 auto;
+  display: block;
+ 
+}
+
+.featuredtrips {
+  text-align: center;
+  padding: 2em;
+}
+
+.featuredtrips h2 {
+  margin-bottom: 1em;
+  font-family: var(--heading-font);
+  background-color: var(--accent1-color);
+  color: #FFF;
+}
+
+.featuredtrips .gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.featuredtrips figure {
+  text-align: center;
+  margin: 1em;
+}
+
+.featuredtrips img {
+  width: 100%;
+  height: auto;
+  max-width: 150px;
+  margin: 0 auto;
+  display: block;
+}
+
+.figcaphead {
+    font-size: large;
+    font-weight: bold;
+    padding: 1rem;
+}
+
 h1 {
     top: 20px;
     width: 100%;
@@ -186,10 +256,13 @@ display: grid;
 grid-template-columns: 1fr 1fr;
 }
 
+
 .map {
     grid-column: 1;
     gap: 1rem;
 }
+
+
 
 .form  {
     grid-column: 2;
@@ -203,6 +276,7 @@ grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: .5rem;
 }
+
 .form-item textarea {
     display: grid;
     grid-column: span;
@@ -222,6 +296,101 @@ button {
     border-radius: .5rem;
     box-shadow: 0 0 30px #eee;
 }
+
+.calltoaction {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.calltoaction img {
+    max-width: 250px;
+    margin: 1rem;
+}
+
+.actioncontact {
+    display: border-box;
+    align-items: center;
+    text-align: center;
+}
+
+.calltoaction a {
+    display: border-box;
+    padding: .5rem;
+    font-family: var(--heading-font);
+    font-size: large;
+    text-decoration: none;
+    background-color:navy;
+    color: #fff;
+    border-radius: .5rem;
+}
+
+.actionconfeature {
+    display: grid;
+    grid-template-columns: 230px auto;
+    align-items: center;
+    text-align: center;
+}
+
+.actioncontact {
+    display: border-box;
+    padding: 1rem;
+    background-color: var(--secondary-color)
+    
+
+}
+
+.actioncontact a {
+    display: border-box;
+    padding: .5rem;
+    font-family: var(--heading-font);
+    font-size: large;
+    text-decoration: none;
+    background-color:navy;
+    color: #fff;
+    border-radius: .5rem;
+}
+
+.actioncontact img {
+    max-width: 150px;
+    align-items: center;
+}
+.triplist h2 {
+  margin-bottom: 1em;
+  font-family: var(--heading-font);
+  text-align: center;
+  background-color: var(--accent1-color);
+  color: #FFF;
+
+h3 {
+    padding: 1rem;
+}
+.calltoaction p {
+    font-family: var(--heading-font);    
+    font-size:xx-large;
+}
+
+.action {
+    grid-column: 1;
+    gap: 1rem;
+}
+
+.subform  {
+    display: border-box;
+    grid-column: 2;
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    border-bottom: #000;
+    border-style:solid;
+
+}
+
+
+
+}
+
 
 .employees {
   display: block;
@@ -257,6 +426,52 @@ button {
   max-width: 100px;
   margin: 0 auto;
   display: block;
+}
+
+table {
+  border-collapse: collapse;
+  border: 2px solid rgb(140 140 140);
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+caption {
+  caption-side: bottom;
+  padding: 10px;
+  font-weight: bold;
+}
+
+thead,
+tfoot {
+  background-color: rgb(228 240 245);
+  color: #000;
+}
+
+th,
+td {
+  border: 1px solid rgb(160 160 160);
+  
+  padding: 8px 10px;
+}
+
+td:last-of-type {
+  text-align: center;
+}
+
+tbody > tr:nth-of-type(even) {
+  background-color: rgb(237 238 242);
+}
+
+tfoot th {
+  text-align: right;
+}
+
+tfoot td {
+  font-weight: bold;
+}
+
+
 }
 
 footer{
