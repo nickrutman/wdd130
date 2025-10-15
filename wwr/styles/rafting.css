@@ -19,13 +19,7 @@
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    align-items: center;
 
-}
 header {
     display: flex;
     justify-content: space-between;
@@ -98,7 +92,14 @@ h1 {
     
 }
 
-
+.normalhead {
+    width: 840px;
+    text-align: center;
+    padding: 16px;
+    opacity: 0.7;
+    background-color: var(--accent1-color);
+    color: #fff;
+}
 
 article {
     position: absolute;
@@ -363,7 +364,7 @@ button {
   text-align: center;
   background-color: var(--accent1-color);
   color: #FFF;
-
+}
 h3 {
     padding: 1rem;
 }
@@ -384,10 +385,6 @@ h3 {
     padding: 1rem;
     border-bottom: #000;
     border-style:solid;
-
-}
-
-
 
 }
 
