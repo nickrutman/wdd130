@@ -336,8 +336,10 @@ button {
 .actioncontact {
     padding: 1rem;
     background-color: var(--secondary-color)
-    
-
+}
+.gallery p {
+    padding: none;
+}
 }
 
 .actioncontact a {
